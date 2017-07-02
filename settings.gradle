@@ -1,0 +1,1 @@
+include ':gogoapps-facebook', ':gogoapps-jackson'
