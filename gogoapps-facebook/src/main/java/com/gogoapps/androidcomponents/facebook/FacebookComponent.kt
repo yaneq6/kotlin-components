@@ -3,12 +3,12 @@ package com.gogoapps.androidcomponents.facebook
 import com.facebook.CallbackManager
 import com.facebook.login.LoginManager
 
-interface FacebookModule
+interface FacebookComponent
 {
     val facebookRepository: FacebookRepository
 }
 
-class FacebookComponent : FacebookModule
+class FacebookModule : FacebookComponent
 {
 
     val loginManager: LoginManager by lazy { LoginManager.getInstance() }

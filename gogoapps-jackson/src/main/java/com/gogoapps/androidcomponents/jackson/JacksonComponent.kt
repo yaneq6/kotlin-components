@@ -11,12 +11,12 @@ import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.temporal.TemporalAccessor
 import kotlin.reflect.KClass
 
-interface JacksonModule
+interface JacksonComponent
 {
     val objectMapper: ObjectMapper
 }
 
-class JacksonComponent : JacksonModule
+class JacksonModule : JacksonComponent
 {
 
     val localDateModule by lazy {
